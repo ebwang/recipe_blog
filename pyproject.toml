@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "recipe-blog"
+version = "0.1.0"
+description = "Recipe Blog"
+authors = ["Eduardo Wang"]
+readme = "README.md"
+packages = [{include = "recipe_blog"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^2.2.2"
+sqlmodel = "^0.0.8"
+dynaconf = "^3.1.11"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
